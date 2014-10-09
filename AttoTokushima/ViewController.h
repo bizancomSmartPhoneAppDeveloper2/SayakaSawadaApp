@@ -8,5 +8,15 @@
 
 #import <UIKit/UIKit.h>
 @interface ViewController : UIViewController
+- (IBAction)keijibanbutton:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property (weak, nonatomic) IBOutlet UILabel *tokushimalabel;
+@property (weak, nonatomic) IBOutlet UIImageView *tokushimaView;
+@property (weak, nonatomic) IBOutlet UIButton *kazurabashiImage;
+@property (weak, nonatomic) IBOutlet UIButton *sudathiImage;
+@property (weak, nonatomic) IBOutlet UIButton *narutokintokiImage;
+@property (weak, nonatomic) IBOutlet UIButton *awaodoriImage;
+@property (weak, nonatomic) IBOutlet UIButton *ramenImage;
+@property (weak, nonatomic) IBOutlet UIButton *uzushioImage;
 @end
 
