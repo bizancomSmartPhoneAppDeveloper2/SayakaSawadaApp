@@ -25,6 +25,7 @@
     NSTimer *timer;
     //配列から取り出した要素のURLを入れる
     NSString *ramenstring;
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated{
