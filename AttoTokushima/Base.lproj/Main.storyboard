@@ -69,15 +69,33 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tokushima.png" translatesAutoresizingMaskIntoConstraints="NO" id="IQS-L0-FjW">
-                                <rect key="frame" x="-23" y="156" width="320" height="568"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="@Tokushima" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qf0-3D-RLf">
                                 <rect key="frame" x="-9" y="93" width="181" height="48"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvL-RU-3Dt">
+                                <rect key="frame" x="40" y="357" width="58" height="77"/>
+                                <state key="normal" backgroundImage="224_0012_L.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ze9-Dv-qCb">
+                                <rect key="frame" x="180" y="310" width="49" height="49"/>
+                                <state key="normal" backgroundImage="1-C-IST241.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5y-c1-Bb6">
+                                <rect key="frame" x="145" y="415" width="56" height="49"/>
+                                <state key="normal" backgroundImage="narutokintoki.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tokushima.png" translatesAutoresizingMaskIntoConstraints="NO" id="IQS-L0-FjW">
+                                <rect key="frame" x="0.0" y="112" width="320" height="568"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -89,8 +107,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1-C-IST241.png" width="179" height="138"/>
+        <image name="224_0012_L.png" width="356" height="500"/>
         <image name="9720eadaf8fb407201a58eb819df4509.png" width="631" height="427"/>
         <image name="awa.gif" width="283" height="254"/>
+        <image name="narutokintoki.png" width="454" height="426"/>
         <image name="ramen.png" width="366" height="236"/>
         <image name="tokushima.png" width="389" height="289"/>
     </resources>

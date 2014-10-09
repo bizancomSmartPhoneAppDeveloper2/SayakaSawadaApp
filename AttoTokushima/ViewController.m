@@ -21,11 +21,12 @@
     NSString *imgurl;
     //ボタンが押された回数
     NSInteger buttonCount;
+    NSMutableArray *ramenArray;
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     //apiのURLをまずは文字列として入れておく
-    str = @"https://api.instagram.com/v1/tags/徳島ラーメン/media/recent?access_token=1317256297.4391fe2.f80770052f314ee790ef15658d0a2c3e";
+    str = @"https://api.instagram.com/v1/tags/徳島ラーメン/media/recent?access_token=1317256297.4391fe2.f80770052f314ee790ef15658d0a2c3e&count=100";
     //日本語を含むURLをエンコーディングしなければエラーになってしまうのでエンコーディング
     NSString *encodedUrl = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(NULL,(CFStringRef)str, NULL, NULL, kCFStringEncodingUTF8));
     str = encodedUrl;
@@ -47,11 +48,11 @@
 }
 
 - (IBAction)button:(UIButton *)sender {
-    if(buttonCount < 20){
-        nil;
-    }else if (buttonCount == 20){
-        buttonCount = 0;
-    }
+    //if(buttonCount < 20){
+      //  nil;
+    //}else if (buttonCount == 20){
+      //  buttonCount = 0;
+    //}
     
     
     //apiのURL先にあるデータを入れる
