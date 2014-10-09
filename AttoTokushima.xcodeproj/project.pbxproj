@@ -10,6 +10,8 @@
 		07055ABF19E62AF1001ED32A /* ramen.m in Sources */ = {isa = PBXBuildFile; fileRef = 07055ABE19E62AF1001ED32A /* ramen.m */; };
 		07592E9919E65DA0004665B1 /* tsurugisan.m in Sources */ = {isa = PBXBuildFile; fileRef = 07592E9819E65DA0004665B1 /* tsurugisan.m */; };
 		07592E9C19E660AE004665B1 /* awaodori.m in Sources */ = {isa = PBXBuildFile; fileRef = 07592E9B19E660AE004665B1 /* awaodori.m */; };
+		07592E9F19E66251004665B1 /* kazurabashi.m in Sources */ = {isa = PBXBuildFile; fileRef = 07592E9E19E66251004665B1 /* kazurabashi.m */; };
+		07592EA219E6635B004665B1 /* sudathi.m in Sources */ = {isa = PBXBuildFile; fileRef = 07592EA119E6635B004665B1 /* sudathi.m */; };
 		075DE2A319E5763F0035B78B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 075DE2A219E5763F0035B78B /* main.m */; };
 		075DE2A619E5763F0035B78B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 075DE2A519E5763F0035B78B /* AppDelegate.m */; };
 		075DE2A919E5763F0035B78B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 075DE2A819E5763F0035B78B /* ViewController.m */; };
@@ -47,6 +49,10 @@
 		07592E9819E65DA0004665B1 /* tsurugisan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tsurugisan.m; sourceTree = "<group>"; };
 		07592E9A19E660AE004665B1 /* awaodori.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = awaodori.h; sourceTree = "<group>"; };
 		07592E9B19E660AE004665B1 /* awaodori.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = awaodori.m; sourceTree = "<group>"; };
+		07592E9D19E66251004665B1 /* kazurabashi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kazurabashi.h; sourceTree = "<group>"; };
+		07592E9E19E66251004665B1 /* kazurabashi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kazurabashi.m; sourceTree = "<group>"; };
+		07592EA019E6635B004665B1 /* sudathi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sudathi.h; sourceTree = "<group>"; };
+		07592EA119E6635B004665B1 /* sudathi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sudathi.m; sourceTree = "<group>"; };
 		075DE29D19E5763F0035B78B /* AttoTokushima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AttoTokushima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		075DE2A119E5763F0035B78B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		075DE2A219E5763F0035B78B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -125,6 +131,10 @@
 				07592E9819E65DA0004665B1 /* tsurugisan.m */,
 				07592E9A19E660AE004665B1 /* awaodori.h */,
 				07592E9B19E660AE004665B1 /* awaodori.m */,
+				07592E9D19E66251004665B1 /* kazurabashi.h */,
+				07592E9E19E66251004665B1 /* kazurabashi.m */,
+				07592EA019E6635B004665B1 /* sudathi.h */,
+				07592EA119E6635B004665B1 /* sudathi.m */,
 				075DE2AA19E5763F0035B78B /* Main.storyboard */,
 				075DE2AD19E5763F0035B78B /* Images.xcassets */,
 				075DE2AF19E5763F0035B78B /* LaunchScreen.xib */,
@@ -280,10 +290,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				07592E9919E65DA0004665B1 /* tsurugisan.m in Sources */,
+				07592EA219E6635B004665B1 /* sudathi.m in Sources */,
 				075DE2A919E5763F0035B78B /* ViewController.m in Sources */,
 				07055ABF19E62AF1001ED32A /* ramen.m in Sources */,
 				0778AFE019E6536C0062A57C /* uzushio.m in Sources */,
 				07592E9C19E660AE004665B1 /* awaodori.m in Sources */,
+				07592E9F19E66251004665B1 /* kazurabashi.m in Sources */,
 				075DE2A619E5763F0035B78B /* AppDelegate.m in Sources */,
 				075DE2A319E5763F0035B78B /* main.m in Sources */,
 			);
