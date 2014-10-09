@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07055ABF19E62AF1001ED32A /* ramen.m in Sources */ = {isa = PBXBuildFile; fileRef = 07055ABE19E62AF1001ED32A /* ramen.m */; };
 		075DE2A319E5763F0035B78B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 075DE2A219E5763F0035B78B /* main.m */; };
 		075DE2A619E5763F0035B78B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 075DE2A519E5763F0035B78B /* AppDelegate.m */; };
 		075DE2A919E5763F0035B78B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 075DE2A819E5763F0035B78B /* ViewController.m */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07055ABD19E62AF1001ED32A /* ramen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ramen.h; sourceTree = "<group>"; };
+		07055ABE19E62AF1001ED32A /* ramen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ramen.m; sourceTree = "<group>"; };
 		075DE29D19E5763F0035B78B /* AttoTokushima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AttoTokushima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		075DE2A119E5763F0035B78B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		075DE2A219E5763F0035B78B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -103,6 +106,8 @@
 			children = (
 				075DE2A419E5763F0035B78B /* AppDelegate.h */,
 				075DE2A519E5763F0035B78B /* AppDelegate.m */,
+				07055ABD19E62AF1001ED32A /* ramen.h */,
+				07055ABE19E62AF1001ED32A /* ramen.m */,
 				075DE2A719E5763F0035B78B /* ViewController.h */,
 				075DE2A819E5763F0035B78B /* ViewController.m */,
 				075DE2AA19E5763F0035B78B /* Main.storyboard */,
@@ -260,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				075DE2A919E5763F0035B78B /* ViewController.m in Sources */,
+				07055ABF19E62AF1001ED32A /* ramen.m in Sources */,
 				075DE2A619E5763F0035B78B /* AppDelegate.m in Sources */,
 				075DE2A319E5763F0035B78B /* main.m in Sources */,
 			);
@@ -452,6 +458,7 @@
 				075DE2C219E5763F0035B78B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		075DE2C319E5763F0035B78B /* Build configuration list for PBXNativeTarget "AttoTokushimaTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +467,7 @@
 				075DE2C519E5763F0035B78B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
