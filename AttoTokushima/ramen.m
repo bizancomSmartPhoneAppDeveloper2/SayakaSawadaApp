@@ -40,27 +40,6 @@ NSString *ramenstring;
     
     //imageviewのサイズにアスペクト比を保ったまま合わせる
     self.ramenImageview.contentMode = UIViewContentModeScaleAspectFit;
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    ramenArray = [NSMutableArray array];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)button:(UIButton *)sender {
-    //if(buttonCount < 20){
-    //  nil;
-    //}else if (buttonCount == 20){
-    //  buttonCount = 0;
-    //}
-    
-    
     
     //apiのURL先にあるデータを入れる
     NSData *data = [NSData dataWithContentsOfURL:url];
@@ -78,6 +57,18 @@ NSString *ramenstring;
         [ramenArray addObject:imageurl];
         NSLog(@"%ld",ramenArray.count);
     }
+
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    ramenArray = [NSMutableArray array];
+    //if(buttonCount < 20){
+    //  nil;
+    //}else if (buttonCount == 20){
+    //  buttonCount = 0;
+    //}
     
     timer = [NSTimer
              scheduledTimerWithTimeInterval:2
@@ -86,7 +77,16 @@ NSString *ramenstring;
              userInfo:nil
              repeats:YES];
     
+
 }
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)button:(UIButton *)sender {
+    }
 
 -(void)showRamenImage{
     //ramenArrayからランダムに１枚取り出す

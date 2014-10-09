@@ -19,12 +19,12 @@
 		075DE2C919E57C380035B78B /* 27cqeHOMRWWhFUFk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 075DE2C819E57C380035B78B /* 27cqeHOMRWWhFUFk.jpg */; };
 		075DE2CB19E5832D0035B78B /* ramen.png in Resources */ = {isa = PBXBuildFile; fileRef = 075DE2CA19E5832D0035B78B /* ramen.png */; };
 		075DE2CD19E5876E0035B78B /* 9720eadaf8fb407201a58eb819df4509.png in Resources */ = {isa = PBXBuildFile; fileRef = 075DE2CC19E5876E0035B78B /* 9720eadaf8fb407201a58eb819df4509.png */; };
-		075DE2CF19E588D00035B78B /* awaodori-1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 075DE2CE19E588D00035B78B /* awaodori-1.jpeg */; };
 		075DE2D119E58AF10035B78B /* awa.gif in Resources */ = {isa = PBXBuildFile; fileRef = 075DE2D019E58AF10035B78B /* awa.gif */; };
 		075DE2D319E610C80035B78B /* 224_0012_L.png in Resources */ = {isa = PBXBuildFile; fileRef = 075DE2D219E610C80035B78B /* 224_0012_L.png */; };
 		075DE2D519E612000035B78B /* 060420naruto_uzu_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 075DE2D419E612000035B78B /* 060420naruto_uzu_1.png */; };
 		075DE2D719E6133E0035B78B /* 1-C-IST241.png in Resources */ = {isa = PBXBuildFile; fileRef = 075DE2D619E6133E0035B78B /* 1-C-IST241.png */; };
 		075DE2DB19E614700035B78B /* narutokintoki.png in Resources */ = {isa = PBXBuildFile; fileRef = 075DE2DA19E614700035B78B /* narutokintoki.png */; };
+		0778AFDD19E64DC60062A57C /* tsurugi.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0778AFDC19E64DC60062A57C /* tsurugi.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,12 +57,12 @@
 		075DE2C819E57C380035B78B /* 27cqeHOMRWWhFUFk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 27cqeHOMRWWhFUFk.jpg; sourceTree = "<group>"; };
 		075DE2CA19E5832D0035B78B /* ramen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ramen.png; sourceTree = "<group>"; };
 		075DE2CC19E5876E0035B78B /* 9720eadaf8fb407201a58eb819df4509.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9720eadaf8fb407201a58eb819df4509.png; sourceTree = "<group>"; };
-		075DE2CE19E588D00035B78B /* awaodori-1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "awaodori-1.jpeg"; sourceTree = "<group>"; };
 		075DE2D019E58AF10035B78B /* awa.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = awa.gif; sourceTree = "<group>"; };
 		075DE2D219E610C80035B78B /* 224_0012_L.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 224_0012_L.png; sourceTree = "<group>"; };
 		075DE2D419E612000035B78B /* 060420naruto_uzu_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 060420naruto_uzu_1.png; sourceTree = "<group>"; };
 		075DE2D619E6133E0035B78B /* 1-C-IST241.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1-C-IST241.png"; sourceTree = "<group>"; };
 		075DE2DA19E614700035B78B /* narutokintoki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = narutokintoki.png; sourceTree = "<group>"; };
+		0778AFDC19E64DC60062A57C /* tsurugi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tsurugi.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,12 +121,12 @@
 		075DE2A019E5763F0035B78B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0778AFDC19E64DC60062A57C /* tsurugi.gif */,
 				075DE2DA19E614700035B78B /* narutokintoki.png */,
 				075DE2D619E6133E0035B78B /* 1-C-IST241.png */,
 				075DE2D419E612000035B78B /* 060420naruto_uzu_1.png */,
 				075DE2D219E610C80035B78B /* 224_0012_L.png */,
 				075DE2D019E58AF10035B78B /* awa.gif */,
-				075DE2CE19E588D00035B78B /* awaodori-1.jpeg */,
 				075DE2CC19E5876E0035B78B /* 9720eadaf8fb407201a58eb819df4509.png */,
 				075DE2CA19E5832D0035B78B /* ramen.png */,
 				075DE2C819E57C380035B78B /* 27cqeHOMRWWhFUFk.jpg */,
@@ -236,6 +236,7 @@
 			files = (
 				075DE2D119E58AF10035B78B /* awa.gif in Resources */,
 				075DE2AC19E5763F0035B78B /* Main.storyboard in Resources */,
+				0778AFDD19E64DC60062A57C /* tsurugi.gif in Resources */,
 				075DE2CB19E5832D0035B78B /* ramen.png in Resources */,
 				075DE2C719E57B270035B78B /* tokushima.png in Resources */,
 				075DE2C919E57C380035B78B /* 27cqeHOMRWWhFUFk.jpg in Resources */,
@@ -246,7 +247,6 @@
 				075DE2CD19E5876E0035B78B /* 9720eadaf8fb407201a58eb819df4509.png in Resources */,
 				075DE2D319E610C80035B78B /* 224_0012_L.png in Resources */,
 				075DE2DB19E614700035B78B /* narutokintoki.png in Resources */,
-				075DE2CF19E588D00035B78B /* awaodori-1.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

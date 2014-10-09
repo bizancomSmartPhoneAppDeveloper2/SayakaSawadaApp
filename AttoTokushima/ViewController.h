@@ -18,5 +18,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *awaodoriImage;
 @property (weak, nonatomic) IBOutlet UIButton *ramenImage;
 @property (weak, nonatomic) IBOutlet UIButton *uzushioImage;
+@property (weak, nonatomic) IBOutlet UIButton *tsurugisanImage;
 @end
 

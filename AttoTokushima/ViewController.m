@@ -29,6 +29,7 @@
     self.kazurabashiImage.hidden = NO;
     self.tokushimalabel.hidden = NO;
     self.tokushimaView.hidden = NO;
+    self.tsurugisanImage.hidden = NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,6 +47,8 @@
     self.kazurabashiImage.hidden = YES;
     self.tokushimaView.hidden = YES;
     self.tokushimalabel.hidden = YES;
+    self.tsurugisanImage.hidden = YES;
+
     keijibanString = @"http://sayaka-sawada.main.jp/index.html/";
     NSURL *keijbanUrl = [NSURL URLWithString:keijibanString];
     NSURLRequest *request = [NSURLRequest requestWithURL:keijbanUrl];
