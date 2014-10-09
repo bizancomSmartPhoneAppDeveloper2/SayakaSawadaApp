@@ -22,6 +22,9 @@
     //ボタンが押された回数
     NSInteger buttonCount;
     NSMutableArray *ramenArray;
+    NSTimer *timer;
+    //配列から取り出した要素のURLを入れる
+    NSString *ramenstring;
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -50,12 +53,13 @@
 
 - (IBAction)button:(UIButton *)sender {
     //if(buttonCount < 20){
-      //  nil;
+    //  nil;
     //}else if (buttonCount == 20){
-      //  buttonCount = 0;
+    //  buttonCount = 0;
     //}
-    //配列から取り出した要素のURLを入れる
-    NSString *ramenstring;
+    
+    
+    
     //apiのURL先にあるデータを入れる
     NSData *data = [NSData dataWithContentsOfURL:url];
     NSError *err = nil;
@@ -64,21 +68,30 @@
     NSArray *dataArray = [dic objectForKey:@"data"];
     NSLog(@"%ld",dataArray.count);
     for (int i = 0; i < (dataArray.count); i++) {
-    NSDictionary *tag_dic = [dataArray objectAtIndex:i];
-    NSDictionary *images_dic = [tag_dic objectForKey:@"images"];
-    NSDictionary *standard_resolution_dic = [images_dic objectForKey:@"standard_resolution"];
-    NSString *imageurl = [standard_resolution_dic objectForKey:@"url"];
-    NSLog(@"%@",imageurl);
-    [ramenArray addObject:imageurl];
-    NSLog(@"%ld",ramenArray.count);
-    
-    //ramenArrayからランダムに１枚取り出す
+        NSDictionary *tag_dic = [dataArray objectAtIndex:i];
+        NSDictionary *images_dic = [tag_dic objectForKey:@"images"];
+        NSDictionary *standard_resolution_dic = [images_dic objectForKey:@"standard_resolution"];
+        NSString *imageurl = [standard_resolution_dic objectForKey:@"url"];
+        NSLog(@"%@",imageurl);
+        [ramenArray addObject:imageurl];
+        NSLog(@"%ld",ramenArray.count);
+    }
+
+    timer = [NSTimer
+             scheduledTimerWithTimeInterval:2
+             target: self
+             selector:@selector(showRamenImage)
+             userInfo:nil
+             repeats:YES];
+
+    }
+
+-(void)showRamenImage{
+        //ramenArrayからランダムに１枚取り出す
     int pos;//ramenArrayから何番目の要素が取り出されたかを保存する箱
     pos = arc4random()%ramenArray.count;//配列から要素をランダムに取り出す
     ramenstring = ramenArray[pos];//該当の要素番号のURLを代入
     NSLog(@"%d",pos);
-    }
-  
     //画像のURLをデータとしてまず入れる
     NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:ramenstring]];
     //imgdataを画像を生成しimageに格納
@@ -88,5 +101,6 @@
     self.imageview.image = image;
     //NSLog(@"%ld",buttonCount);
     //buttonCount++;
+
 }
 @end
