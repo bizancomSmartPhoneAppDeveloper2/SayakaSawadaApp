@@ -53,7 +53,11 @@
     NSURL *keijbanUrl = [NSURL URLWithString:keijibanString];
     NSURLRequest *request = [NSURLRequest requestWithURL:keijbanUrl];
     [self.webView loadRequest:request];
+}
 
+- (IBAction)goBackHome:(UIStoryboardSegue *)segue{
+    NSLog(@"Exitで戻る　%@",segue.identifier);
     
 }
+
 @end

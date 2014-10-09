@@ -1,5 +1,5 @@
 //
-//  ramen.h
+//  awaodori.h
 //  AttoTokushima
 //
 //  Created by ビザンコムマック０４ on 2014/10/09.
@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ramen : UIViewController
-- (IBAction)button:(UIButton *)sender;
-@property (weak, nonatomic) IBOutlet UIImageView *ramenImageview;
+@interface awaodori : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *awaodoriImageView;
 - (IBAction)backbutton:(UIButton *)sender;
 
 @end

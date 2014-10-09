@@ -1,37 +1,37 @@
 //
-//  ramen.m
+//  uzushio.m
 //  AttoTokushima
 //
 //  Created by ビザンコムマック０４ on 2014/10/09.
 //  Copyright (c) 2014年 ビザンコムマック０４. All rights reserved.
 //
 
-#import "ramen.h"
+#import "uzushio.h"
 
-@interface ramen ()
+@interface uzushio ()
 
 @end
 
-@implementation ramen{
-
-//apiのURLを入れる
-NSURL *url;
-//apiのURLの文字列を入れる
-NSString *str;
-//画像のURLを文字列として入れる
-NSString *imgurl;
-//ボタンが押された回数
-NSInteger buttonCount;
-NSMutableArray *ramenArray;
-NSTimer *timer;
-//配列から取り出した要素のURLを入れる
-NSString *ramenstring;
-
+@implementation uzushio{
+    
+    //apiのURLを入れる
+    NSURL *url;
+    //apiのURLの文字列を入れる
+    NSString *str;
+    //画像のURLを文字列として入れる
+    NSString *imgurl;
+    //ボタンが押された回数
+    NSInteger buttonCount;
+    NSMutableArray *ramenArray;
+    NSTimer *timer;
+    //配列から取り出した要素のURLを入れる
+    NSString *ramenstring;
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     //apiのURLをまずは文字列として入れておく
-    str = @"https://api.instagram.com/v1/tags/徳島ラーメン/media/recent?access_token=1317256297.4391fe2.f80770052f314ee790ef15658d0a2c3e&count=100";
+    str = @"https://api.instagram.com/v1/tags/渦潮/media/recent?access_token=1317256297.4391fe2.f80770052f314ee790ef15658d0a2c3e&count=100";
     //日本語を含むURLをエンコーディングしなければエラーになってしまうのでエンコーディング
     NSString *encodedUrl = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(NULL,(CFStringRef)str, NULL, NULL, kCFStringEncodingUTF8));
     str = encodedUrl;
@@ -39,7 +39,7 @@ NSString *ramenstring;
     url = [NSURL URLWithString:str];
     
     //imageviewのサイズにアスペクト比を保ったまま合わせる
-    self.ramenImageview.contentMode = UIViewContentModeScaleAspectFit;
+    self.uzushioImageview.contentMode = UIViewContentModeScaleAspectFit;
     
     //apiのURL先にあるデータを入れる
     NSData *data = [NSData dataWithContentsOfURL:url];
@@ -57,7 +57,7 @@ NSString *ramenstring;
         [ramenArray addObject:imageurl];
         NSLog(@"%ld",ramenArray.count);
     }
-
+    
 }
 
 - (void)viewDidLoad {
@@ -77,7 +77,7 @@ NSString *ramenstring;
              userInfo:nil
              repeats:YES];
     
-
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -86,7 +86,7 @@ NSString *ramenstring;
 }
 
 - (IBAction)button:(UIButton *)sender {
-    }
+}
 
 -(void)showRamenImage{
     //ramenArrayからランダムに１枚取り出す
@@ -100,7 +100,7 @@ NSString *ramenstring;
     UIImage *image = [[UIImage alloc] initWithData:imageData];
     
     //imageviewの画像をimageに設定
-    self.ramenImageview.image = image;
+    self.uzushioImageview.image = image;
     //NSLog(@"%ld",buttonCount);
     //buttonCount++;
     
