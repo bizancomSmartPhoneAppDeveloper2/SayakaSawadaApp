@@ -10,6 +10,5 @@
 
 @interface narutokintoki : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *narutokintokiImageVIew;
-- (IBAction)buckbutton:(UIButton *)sender;
 
 @end

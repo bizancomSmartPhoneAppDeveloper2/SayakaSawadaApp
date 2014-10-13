@@ -16,13 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tokushima.png" translatesAutoresizingMaskIntoConstraints="NO" id="IQS-L0-FjW">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                             <webView contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qcz-nB-KB8">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tokushima.png" translatesAutoresizingMaskIntoConstraints="NO" id="IQS-L0-FjW">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pux-dP-wn0">
                                 <rect key="frame" x="16" y="188" width="67" height="56"/>
                                 <state key="normal" backgroundImage="9720eadaf8fb407201a58eb819df4509.png">
@@ -84,7 +84,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvX-Kj-cia">
-                                <rect key="frame" x="98" y="463" width="135" height="30"/>
+                                <rect key="frame" x="98" y="447" width="135" height="30"/>
                                 <state key="normal" title="徳島を語る掲示板へ">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -101,13 +101,24 @@
                                     <segue destination="Tcm-kB-ExS" kind="modal" id="8sD-MD-g9C"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCa-U0-DNy">
+                                <rect key="frame" x="108" y="485" width="105" height="30"/>
+                                <state key="normal" title="アプリトップへ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeWebview:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Jdd-eW-lGA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="apuriTopButton" destination="yCa-U0-DNy" id="aJs-IG-gtF"/>
                         <outlet property="awaodoriImage" destination="vdA-FW-z6I" id="yO6-bb-FmF"/>
                         <outlet property="kazurabashiImage" destination="Pux-dP-wn0" id="fD0-aQ-J2c"/>
+                        <outlet property="kejibanLabel" destination="ZvX-Kj-cia" id="5EX-Jq-UfR"/>
                         <outlet property="narutokintokiImage" destination="r5y-c1-Bb6" id="qiZ-6g-OuI"/>
                         <outlet property="ramenImage" destination="DK6-PY-e1u" id="aaU-dm-04Q"/>
                         <outlet property="sudathiImage" destination="BvL-RU-3Dt" id="mdl-Jf-C9D"/>

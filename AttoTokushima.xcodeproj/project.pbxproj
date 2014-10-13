@@ -31,6 +31,7 @@
 		075DE2DB19E614700035B78B /* narutokintoki.png in Resources */ = {isa = PBXBuildFile; fileRef = 075DE2DA19E614700035B78B /* narutokintoki.png */; };
 		0778AFDD19E64DC60062A57C /* tsurugi.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0778AFDC19E64DC60062A57C /* tsurugi.gif */; };
 		0778AFE019E6536C0062A57C /* uzushio.m in Sources */ = {isa = PBXBuildFile; fileRef = 0778AFDF19E6536C0062A57C /* uzushio.m */; };
+		07862A1719EB8F5200450B41 /* getInstagramAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 07862A1619EB8F5200450B41 /* getInstagramAPI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,8 @@
 		0778AFDC19E64DC60062A57C /* tsurugi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tsurugi.gif; sourceTree = "<group>"; };
 		0778AFDE19E6536C0062A57C /* uzushio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uzushio.h; sourceTree = "<group>"; };
 		0778AFDF19E6536C0062A57C /* uzushio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = uzushio.m; sourceTree = "<group>"; };
+		07862A1519EB8F5200450B41 /* getInstagramAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getInstagramAPI.h; sourceTree = "<group>"; };
+		07862A1619EB8F5200450B41 /* getInstagramAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = getInstagramAPI.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,10 +127,13 @@
 			children = (
 				075DE2A419E5763F0035B78B /* AppDelegate.h */,
 				075DE2A519E5763F0035B78B /* AppDelegate.m */,
-				07055ABD19E62AF1001ED32A /* ramen.h */,
-				07055ABE19E62AF1001ED32A /* ramen.m */,
 				075DE2A719E5763F0035B78B /* ViewController.h */,
 				075DE2A819E5763F0035B78B /* ViewController.m */,
+				075DE2AA19E5763F0035B78B /* Main.storyboard */,
+				07862A1519EB8F5200450B41 /* getInstagramAPI.h */,
+				07862A1619EB8F5200450B41 /* getInstagramAPI.m */,
+				07055ABD19E62AF1001ED32A /* ramen.h */,
+				07055ABE19E62AF1001ED32A /* ramen.m */,
 				0778AFDE19E6536C0062A57C /* uzushio.h */,
 				0778AFDF19E6536C0062A57C /* uzushio.m */,
 				07592E9719E65DA0004665B1 /* tsurugisan.h */,
@@ -138,7 +144,6 @@
 				07592E9E19E66251004665B1 /* kazurabashi.m */,
 				07592EA019E6635B004665B1 /* sudathi.h */,
 				07592EA119E6635B004665B1 /* sudathi.m */,
-				075DE2AA19E5763F0035B78B /* Main.storyboard */,
 				07592EA319E66491004665B1 /* narutokintoki.h */,
 				07592EA419E66491004665B1 /* narutokintoki.m */,
 				075DE2AD19E5763F0035B78B /* Images.xcassets */,
@@ -302,6 +307,7 @@
 				0778AFE019E6536C0062A57C /* uzushio.m in Sources */,
 				07592E9C19E660AE004665B1 /* awaodori.m in Sources */,
 				07592E9F19E66251004665B1 /* kazurabashi.m in Sources */,
+				07862A1719EB8F5200450B41 /* getInstagramAPI.m in Sources */,
 				075DE2A619E5763F0035B78B /* AppDelegate.m in Sources */,
 				075DE2A319E5763F0035B78B /* main.m in Sources */,
 			);
