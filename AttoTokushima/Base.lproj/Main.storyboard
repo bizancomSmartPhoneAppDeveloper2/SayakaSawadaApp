@@ -28,6 +28,9 @@
                                 <state key="normal" backgroundImage="9720eadaf8fb407201a58eb819df4509.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="a1b-lz-lQC" kind="modal" identifier="kazurabashiSegue" id="zj8-ic-l3e"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DK6-PY-e1u">
                                 <rect key="frame" x="196" y="314" width="67" height="54"/>
@@ -43,6 +46,9 @@
                                 <state key="normal" backgroundImage="awa.gif">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="a1b-lz-lQC" kind="modal" identifier="awaodoriSegue" id="2Wg-FV-1aH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ze9-Dv-qCb">
                                 <rect key="frame" x="255" y="240" width="49" height="49"/>
@@ -58,12 +64,18 @@
                                 <state key="normal" backgroundImage="narutokintoki.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="a1b-lz-lQC" kind="modal" identifier="narutokintokiSegue" id="ydv-Pt-fPg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvL-RU-3Dt">
                                 <rect key="frame" x="25" y="275" width="58" height="77"/>
                                 <state key="normal" backgroundImage="224_0012_L.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="a1b-lz-lQC" kind="modal" identifier="sudathiSegue" id="ujY-bf-Pok"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="@Tokushima" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qf0-3D-RLf">
                                 <rect key="frame" x="75" y="71" width="181" height="48"/>
@@ -85,6 +97,9 @@
                                 <state key="normal" backgroundImage="tsurugi.gif">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="a1b-lz-lQC" kind="modal" identifier="tsurugisanSegue" id="hWO-FM-43I"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCa-U0-DNy">
                                 <rect key="frame" x="108" y="485" width="105" height="30"/>
@@ -168,6 +183,6 @@
         <image name="tsurugi.gif" width="306" height="224"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kHG-Cj-TTO"/>
+        <segue reference="ydv-Pt-fPg"/>
     </inferredMetricsTieBreakers>
 </document>
