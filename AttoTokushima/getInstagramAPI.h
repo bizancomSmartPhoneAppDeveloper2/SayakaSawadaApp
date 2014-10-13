@@ -7,7 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "AppDelegate.h"
+
+@protocol getInstagramAPIDelegate<NSObject>//デリゲートすることを宣言
+-(void)didGetAPI;//デリゲートメソッド
+@end
 
 @interface getInstagramAPI : NSObject
-
+@property id<getInstagramAPIDelegate> delegate;
+@property NSData *imageData;
+@property UIImage *image;
+@property NSString *imageurl;
+@property NSString *sendString;
+-(void)timer;
+-(void)getAPI;
 @end

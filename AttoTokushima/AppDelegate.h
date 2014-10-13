@@ -11,6 +11,8 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+// ここに受け渡ししたい変数を宣言
+@property (nonatomic,retain) UIImage *imagesend;
 
 
 @end

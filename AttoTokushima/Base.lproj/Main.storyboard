@@ -28,9 +28,6 @@
                                 <state key="normal" backgroundImage="9720eadaf8fb407201a58eb819df4509.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="lfi-sV-q7y" kind="modal" id="Kr8-Bi-usm"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DK6-PY-e1u">
                                 <rect key="frame" x="196" y="314" width="67" height="54"/>
@@ -46,36 +43,24 @@
                                 <state key="normal" backgroundImage="awa.gif">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="ZFM-2v-aCs" kind="modal" id="R9x-tv-WQc"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ze9-Dv-qCb">
                                 <rect key="frame" x="255" y="240" width="49" height="49"/>
                                 <state key="normal" backgroundImage="1-C-IST241.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="qfb-1Y-Dwy" kind="modal" id="nxg-8I-Dlq"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5y-c1-Bb6">
                                 <rect key="frame" x="114" y="343" width="56" height="49"/>
                                 <state key="normal" backgroundImage="narutokintoki.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="aFE-HC-GKO" kind="modal" id="x04-Qc-Qdg"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvL-RU-3Dt">
                                 <rect key="frame" x="25" y="275" width="58" height="77"/>
                                 <state key="normal" backgroundImage="224_0012_L.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="5wI-tG-uvL" kind="modal" id="7XP-ob-8d6"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="@Tokushima" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qf0-3D-RLf">
                                 <rect key="frame" x="75" y="71" width="181" height="48"/>
@@ -97,9 +82,6 @@
                                 <state key="normal" backgroundImage="tsurugi.gif">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Tcm-kB-ExS" kind="modal" id="8sD-MD-g9C"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCa-U0-DNy">
                                 <rect key="frame" x="108" y="485" width="105" height="30"/>
@@ -116,16 +98,10 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="apuriTopButton" destination="yCa-U0-DNy" id="aJs-IG-gtF"/>
-                        <outlet property="awaodoriImage" destination="vdA-FW-z6I" id="yO6-bb-FmF"/>
-                        <outlet property="kazurabashiImage" destination="Pux-dP-wn0" id="fD0-aQ-J2c"/>
                         <outlet property="kejibanLabel" destination="ZvX-Kj-cia" id="5EX-Jq-UfR"/>
-                        <outlet property="narutokintokiImage" destination="r5y-c1-Bb6" id="qiZ-6g-OuI"/>
                         <outlet property="ramenImage" destination="DK6-PY-e1u" id="aaU-dm-04Q"/>
-                        <outlet property="sudathiImage" destination="BvL-RU-3Dt" id="mdl-Jf-C9D"/>
                         <outlet property="tokushimaView" destination="IQS-L0-FjW" id="aNg-kq-pty"/>
                         <outlet property="tokushimalabel" destination="Qf0-3D-RLf" id="d9T-UO-z7p"/>
-                        <outlet property="tsurugisanImage" destination="gmj-1Q-XVL" id="plj-Ou-WRS"/>
-                        <outlet property="uzushioImage" destination="ze9-Dv-qCb" id="21F-cJ-pIm"/>
                         <outlet property="webView" destination="qcz-nB-KB8" id="29h-KA-Rvr"/>
                     </connections>
                 </viewController>
@@ -133,10 +109,10 @@
             </objects>
             <point key="canvasLocation" x="241" y="161"/>
         </scene>
-        <!--Ramen-->
+        <!--Show Picture-->
         <scene sceneID="Kve-1c-do0">
             <objects>
-                <viewController storyboardIdentifier="ramenViewcontroller" id="a1b-lz-lQC" customClass="ramen" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="showPictureViewcontroller" id="a1b-lz-lQC" customClass="showPicture" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dpw-sd-lQw"/>
                         <viewControllerLayoutGuide type="bottom" id="qfB-AO-8V9"/>
@@ -164,279 +140,13 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="ramenImageview" destination="fEz-XJ-tfS" id="de4-Qf-5fx"/>
+                        <outlet property="imageview" destination="fEz-XJ-tfS" id="kUC-Qx-3Yh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hwf-Bo-nCE" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="bWw-yX-DQL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="683" y="573"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Fzl-Ph-kJa">
-            <objects>
-                <viewController id="QN6-S5-KJs" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="YgC-Pt-iHJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="GsL-04-Xxk"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Lsk-HB-Ola">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KHw-o9-W21" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1933" y="860"/>
-        </scene>
-        <!--Tsurugisan-->
-        <scene sceneID="LAz-ba-Tb6">
-            <objects>
-                <viewController storyboardIdentifier="tsurugisanVIewcontroller" id="Tcm-kB-ExS" customClass="tsurugisan" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="9W5-Ta-K4Y"/>
-                        <viewControllerLayoutGuide type="bottom" id="5wE-32-h4J"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="i5i-L1-5aE">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0QM-zD-LPm">
-                                <rect key="frame" x="22" y="39" width="276" height="416"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9T-JI-Pmi">
-                                <rect key="frame" x="137" y="476" width="60" height="30"/>
-                                <state key="normal" title="トップへ">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="backbutton:" destination="Tcm-kB-ExS" eventType="touchUpInside" id="dIX-BZ-wPg"/>
-                                    <segue destination="ko0-AN-YU0" kind="unwind" unwindAction="goBackHome:" id="Mxg-dG-LLI"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="tsurugisanImageVIew" destination="0QM-zD-LPm" id="nyk-Zo-te7"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nI1-HU-HSX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="ko0-AN-YU0" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="704" y="-703"/>
-        </scene>
-        <!--Awaodori-->
-        <scene sceneID="Dye-Kq-yJj">
-            <objects>
-                <viewController storyboardIdentifier="awaodoriViewcontroller" id="ZFM-2v-aCs" customClass="awaodori" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nhR-S6-c3R"/>
-                        <viewControllerLayoutGuide type="bottom" id="l9M-Py-cfX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Scu-Cy-GSk">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TME-38-dvV">
-                                <rect key="frame" x="22" y="43" width="276" height="416"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4l-ba-eM7">
-                                <rect key="frame" x="137" y="489" width="60" height="30"/>
-                                <state key="normal" title="トップへ">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="backbutton:" destination="ZFM-2v-aCs" eventType="touchUpInside" id="vpQ-vu-BzU"/>
-                                    <segue destination="zom-K0-C1K" kind="unwind" unwindAction="goBackHome:" id="fHx-71-X9s"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="awaodoriImageView" destination="TME-38-dvV" id="LRH-sM-kxC"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="skv-nr-s3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="zom-K0-C1K" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="207" y="-685"/>
-        </scene>
-        <!--Narutokintoki-->
-        <scene sceneID="dcJ-DS-hK1">
-            <objects>
-                <viewController storyboardIdentifier="narutokintokiVIewcontroller" id="aFE-HC-GKO" customClass="narutokintoki" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="NTN-xo-h9S"/>
-                        <viewControllerLayoutGuide type="bottom" id="1Tg-7K-dva"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="4SG-nD-H0C">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dPK-ys-RDT">
-                                <rect key="frame" x="22" y="33" width="276" height="416"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lox-UC-uUQ">
-                                <rect key="frame" x="136" y="482" width="60" height="30"/>
-                                <state key="normal" title="トップへ">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="backbutton:" destination="aFE-HC-GKO" eventType="touchUpInside" id="RbE-Gw-1lA"/>
-                                    <segue destination="LGC-UO-Nvg" kind="unwind" unwindAction="goBackHome:" id="6fe-kQ-Obj"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="narutokintokiImageVIew" destination="dPK-ys-RDT" id="6Xe-r9-jSD"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ydW-Vi-Tud" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="LGC-UO-Nvg" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="179" y="865"/>
-        </scene>
-        <!--Sudathi-->
-        <scene sceneID="xoe-87-JAV">
-            <objects>
-                <viewController storyboardIdentifier="sudathi" id="5wI-tG-uvL" customClass="sudathi" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="zYE-Ag-qaF"/>
-                        <viewControllerLayoutGuide type="bottom" id="Cqw-J4-i3G"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dxp-QO-OwQ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Vl-Rx-iVp">
-                                <rect key="frame" x="22" y="20" width="276" height="416"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJC-Ba-Jvg">
-                                <rect key="frame" x="137" y="478" width="60" height="30"/>
-                                <state key="normal" title="トップへ">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="buckbutton:" destination="5wI-tG-uvL" eventType="touchUpInside" id="X4b-sU-bb4"/>
-                                    <segue destination="xHf-zi-9fR" kind="unwind" unwindAction="goBackHome:" id="hee-x4-zY6"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="sudathiImageView" destination="7Vl-Rx-iVp" id="JIK-7D-03l"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wIN-oE-tNn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="xHf-zi-9fR" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="-313" y="219"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="NyF-d2-SRQ">
-            <objects>
-                <viewController id="QoD-kc-2Ig" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="vrh-ft-OhC"/>
-                        <viewControllerLayoutGuide type="bottom" id="Q22-vM-BA5"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="wCK-HN-eUa">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="H6o-9M-eio" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2510" y="2511"/>
-        </scene>
-        <!--Uzushio-->
-        <scene sceneID="ONm-om-ZCQ">
-            <objects>
-                <viewController storyboardIdentifier="uzushioVIewcontroller" id="qfb-1Y-Dwy" customClass="uzushio" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Yls-oA-bK3"/>
-                        <viewControllerLayoutGuide type="bottom" id="woa-qg-2rY"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Uhb-pX-crY">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EwB-1d-wTP">
-                                <rect key="frame" x="22" y="33" width="276" height="416"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCh-yq-aga">
-                                <rect key="frame" x="137" y="489" width="60" height="30"/>
-                                <state key="normal" title="トップへ">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="backbutton:" destination="qfb-1Y-Dwy" eventType="touchUpInside" id="kjd-tC-lDF"/>
-                                    <segue destination="6HA-wq-sgk" kind="unwind" unwindAction="goBackHome:" id="XWL-fG-sHL"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="uzushioImageview" destination="EwB-1d-wTP" id="64X-kZ-hRa"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tS8-gV-T58" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="6HA-wq-sgk" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="891" y="-82"/>
-        </scene>
-        <!--Kazurabashi-->
-        <scene sceneID="rt0-Eo-fgB">
-            <objects>
-                <viewController storyboardIdentifier="kazurabashiViewcontroller" id="lfi-sV-q7y" customClass="kazurabashi" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="OI8-9a-D1g"/>
-                        <viewControllerLayoutGuide type="bottom" id="nbH-lT-2ZK"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="19p-0m-kCH">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fFR-eY-oiu">
-                                <rect key="frame" x="22" y="20" width="276" height="416"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAh-Dy-5g0">
-                                <rect key="frame" x="130" y="468" width="60" height="30"/>
-                                <state key="normal" title="トップへ">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="backbutton:" destination="lfi-sV-q7y" eventType="touchUpInside" id="S8v-gF-rNg"/>
-                                    <segue destination="2q7-i1-8lM" kind="unwind" unwindAction="goBackHome:" id="6Np-KR-2dn"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="kazurabashiImageView" destination="fFR-eY-oiu" id="vC8-dk-tNK"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kzc-hm-yoc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="2q7-i1-8lM" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="-313" y="-517"/>
         </scene>
     </scenes>
     <resources>
