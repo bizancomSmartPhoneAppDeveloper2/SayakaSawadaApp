@@ -14,6 +14,7 @@
 
 @implementation ViewController{
     NSString *keijibanString;
+    NSInteger tag;
 }
 
 
@@ -75,5 +76,10 @@
     self.tsurugisanImage.hidden = NO;
     self.kejibanLabel.hidden = NO;
     self.apuriTopButton.hidden = YES;
+}
+- (IBAction)meisanButtons:(UIButton *)sender {
+    NSLog(@"センダータグは%ld",sender.tag);
+
+        
 }
 @end

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07055ABF19E62AF1001ED32A /* ramen.m in Sources */ = {isa = PBXBuildFile; fileRef = 07055ABE19E62AF1001ED32A /* ramen.m */; };
 		075DE2A319E5763F0035B78B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 075DE2A219E5763F0035B78B /* main.m */; };
 		075DE2A619E5763F0035B78B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 075DE2A519E5763F0035B78B /* AppDelegate.m */; };
 		075DE2A919E5763F0035B78B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 075DE2A819E5763F0035B78B /* ViewController.m */; };
@@ -40,8 +39,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07055ABD19E62AF1001ED32A /* ramen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ramen.h; sourceTree = "<group>"; };
-		07055ABE19E62AF1001ED32A /* ramen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ramen.m; sourceTree = "<group>"; };
 		075DE29D19E5763F0035B78B /* AttoTokushima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AttoTokushima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		075DE2A119E5763F0035B78B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		075DE2A219E5763F0035B78B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -117,8 +114,6 @@
 				075DE2AA19E5763F0035B78B /* Main.storyboard */,
 				07862A1519EB8F5200450B41 /* getInstagramAPI.h */,
 				07862A1619EB8F5200450B41 /* getInstagramAPI.m */,
-				07055ABD19E62AF1001ED32A /* ramen.h */,
-				07055ABE19E62AF1001ED32A /* ramen.m */,
 				07EB92B719EC09B30066FD46 /* showPicture.h */,
 				07EB92B819EC09B30066FD46 /* showPicture.m */,
 				075DE2AD19E5763F0035B78B /* Images.xcassets */,
@@ -275,7 +270,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				075DE2A919E5763F0035B78B /* ViewController.m in Sources */,
-				07055ABF19E62AF1001ED32A /* ramen.m in Sources */,
 				07862A1719EB8F5200450B41 /* getInstagramAPI.m in Sources */,
 				07EB92B919EC09B30066FD46 /* showPicture.m in Sources */,
 				075DE2A619E5763F0035B78B /* AppDelegate.m in Sources */,

@@ -35,6 +35,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="meisanButtons:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7UU-ts-bAY"/>
                                     <segue destination="a1b-lz-lQC" kind="modal" id="rJf-Fa-x2M"/>
                                 </connections>
                             </button>
@@ -44,11 +45,15 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ze9-Dv-qCb">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ze9-Dv-qCb">
                                 <rect key="frame" x="255" y="240" width="49" height="49"/>
                                 <state key="normal" backgroundImage="1-C-IST241.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="meisanButtons:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SgM-Dt-VrJ"/>
+                                    <segue destination="a1b-lz-lQC" kind="modal" id="NcW-FE-Fiw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5y-c1-Bb6">
                                 <rect key="frame" x="114" y="343" width="56" height="49"/>
@@ -98,10 +103,16 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="apuriTopButton" destination="yCa-U0-DNy" id="aJs-IG-gtF"/>
+                        <outlet property="awaodoriImage" destination="vdA-FW-z6I" id="4Ok-i6-EtH"/>
+                        <outlet property="kazurabashiImage" destination="Pux-dP-wn0" id="QZd-hy-emc"/>
                         <outlet property="kejibanLabel" destination="ZvX-Kj-cia" id="5EX-Jq-UfR"/>
+                        <outlet property="narutokintokiImage" destination="r5y-c1-Bb6" id="98z-qO-qbP"/>
                         <outlet property="ramenImage" destination="DK6-PY-e1u" id="aaU-dm-04Q"/>
+                        <outlet property="sudathiImage" destination="BvL-RU-3Dt" id="OuS-i3-Eec"/>
                         <outlet property="tokushimaView" destination="IQS-L0-FjW" id="aNg-kq-pty"/>
                         <outlet property="tokushimalabel" destination="Qf0-3D-RLf" id="d9T-UO-z7p"/>
+                        <outlet property="tsurugisanImage" destination="gmj-1Q-XVL" id="1hs-jj-6VG"/>
+                        <outlet property="uzushioImage" destination="ze9-Dv-qCb" id="Yz5-Gr-igg"/>
                         <outlet property="webView" destination="qcz-nB-KB8" id="29h-KA-Rvr"/>
                     </connections>
                 </viewController>
@@ -131,7 +142,6 @@
                                 </state>
                                 <connections>
                                     <action selector="backbutton:" destination="a1b-lz-lQC" eventType="touchUpInside" id="orb-FT-hDo"/>
-                                    <action selector="button:" destination="a1b-lz-lQC" eventType="touchUpInside" id="Yht-Qt-thC"/>
                                     <segue destination="bWw-yX-DQL" kind="unwind" unwindAction="goBackHome:" id="HHc-5a-LSs"/>
                                 </connections>
                             </button>
@@ -159,4 +169,7 @@
         <image name="tokushima.png" width="389" height="289"/>
         <image name="tsurugi.gif" width="306" height="224"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="rJf-Fa-x2M"/>
+    </inferredMetricsTieBreakers>
 </document>

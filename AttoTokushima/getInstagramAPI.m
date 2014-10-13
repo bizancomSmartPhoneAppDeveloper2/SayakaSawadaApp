@@ -20,7 +20,8 @@
 
 
 
--(void)timer{    
+-(void)timer{
+    
     timer = [NSTimer
              scheduledTimerWithTimeInterval:0.5
              target: self
@@ -68,9 +69,14 @@
     
     NSLog(@"%ld",pictureCount);
     pictureCount++;
+    
+}
+
+-(void)timerStop{
+    [timer invalidate];
+    NSLog(@"タイマーストップ");
 }
 
 
 
 @end
-

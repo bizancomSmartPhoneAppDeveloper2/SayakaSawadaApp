@@ -22,4 +22,5 @@
 @property NSString *sendString;
 -(void)timer;
 -(void)getAPI;
+-(void)timerStop;
 @end

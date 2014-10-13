@@ -29,14 +29,13 @@
     
     self.imageview.contentMode = UIViewContentModeScaleAspectFit;
 
-    //if (sender.tag == 0) {
         ramenAPI.sendString = @"https://api.instagram.com/v1/tags/徳島ラーメン/media/recent?access_token=1317256297.4391fe2.f80770052f314ee790ef15658d0a2c3e&count=100";
-        
+    
         [ramenAPI timer];
-    //}else if(sender.tag == 1){
+   
         //awaodoriAPI.sendString = @"https://api.instagram.com/v1/tags/阿波おどり/media/recent?access_token=1317256297.4391fe2.f80770052f314ee790ef15658d0a2c3e&count=100";
         //[awaodoriAPI timer];
-    //}
+    
 
 }
 
@@ -66,8 +65,9 @@
 }
 
 - (IBAction)backbutton:(UIButton *)sender {
-    //getInstagramAPI *API = ramenAPI;
-   //[timer invalidate];
+    [ramenAPI timerStop];
+    
 }
+
 
 @end

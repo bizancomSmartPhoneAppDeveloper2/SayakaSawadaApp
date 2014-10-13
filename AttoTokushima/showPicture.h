@@ -12,10 +12,8 @@
 
 @interface showPicture : UIViewController<getInstagramAPIDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *imageview;
-- (IBAction)backbutton:(UIButton *)sender;
 @property UIImage *image;
 @property(nonatomic,retain) NSURL *imageUrlcatch; // 受け取りプロパティ
-
 
 @end
 

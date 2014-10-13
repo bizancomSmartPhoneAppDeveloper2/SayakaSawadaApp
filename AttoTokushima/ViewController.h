@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
+
 @interface ViewController : UIViewController
 - (IBAction)keijibanbutton:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
@@ -22,5 +24,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *kejibanLabel;
 - (IBAction)closeWebview:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UIButton *apuriTopButton;
+- (IBAction)meisanButtons:(UIButton *)sender;
 @end
 
