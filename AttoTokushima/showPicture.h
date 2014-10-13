@@ -10,10 +10,14 @@
 #import "getInstagramAPI.h"
 #import "AppDelegate.h"
 
-@interface showPicture : UIViewController<getInstagramAPIDelegate>
+@interface showPicture : UIViewController<getInstagramAPIDelegate>{
+    //前の画面から受け取る引数
+    NSString *arguments;
+}
 @property (weak, nonatomic) IBOutlet UIImageView *imageview;
 @property UIImage *image;
 @property(nonatomic,retain) NSURL *imageUrlcatch; // 受け取りプロパティ
+@property (nonatomic) NSString *arguments;
 
 @end
 

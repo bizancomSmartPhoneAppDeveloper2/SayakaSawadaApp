@@ -16,11 +16,13 @@
         getInstagramAPI *ramenAPI;
         getInstagramAPI *awaodoriAPI;
 }
+@synthesize arguments = arguments;
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    NSLog(@"アギュメンは%@",arguments);
     ramenAPI = [[getInstagramAPI alloc]init];//さっき準備したmyCarをインスタンス化
     ramenAPI.delegate = self;
     awaodoriAPI = [[getInstagramAPI alloc]init];
@@ -29,7 +31,8 @@
     
     self.imageview.contentMode = UIViewContentModeScaleAspectFit;
 
-        ramenAPI.sendString = @"https://api.instagram.com/v1/tags/徳島ラーメン/media/recent?access_token=1317256297.4391fe2.f80770052f314ee790ef15658d0a2c3e&count=100";
+    ramenAPI.sendString = arguments;
+        //ramenAPI.sendString = @"https://api.instagram.com/v1/tags/徳島ラーメン/media/recent?access_token=1317256297.4391fe2.f80770052f314ee790ef15658d0a2c3e&count=100";
     
         [ramenAPI timer];
    

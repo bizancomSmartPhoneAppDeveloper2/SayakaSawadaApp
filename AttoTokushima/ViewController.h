@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "showPicture.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    //次の画面へ渡す引数
+    NSString *arguments;
+}
 - (IBAction)keijibanbutton:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UILabel *tokushimalabel;
@@ -24,6 +28,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *kejibanLabel;
 - (IBAction)closeWebview:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UIButton *apuriTopButton;
-- (IBAction)meisanButtons:(UIButton *)sender;
+@property (nonatomic) NSString *arguments;
+
 @end
 

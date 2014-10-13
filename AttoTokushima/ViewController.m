@@ -31,6 +31,8 @@
     self.tokushimalabel.hidden = NO;
     self.tokushimaView.hidden = NO;
     self.tsurugisanImage.hidden = NO;
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -77,9 +79,20 @@
     self.kejibanLabel.hidden = NO;
     self.apuriTopButton.hidden = YES;
 }
-- (IBAction)meisanButtons:(UIButton *)sender {
-    NSLog(@"センダータグは%ld",sender.tag);
 
-        
+//画面遷移時に呼ばれるメソッド
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    //2つ目の画面にパラメータを渡して遷移する
+    if ([segue.identifier isEqualToString:@"ramenSegue"]) {
+        //ここでパラメータを渡す
+        arguments = @"https://api.instagram.com/v1/tags/徳島ラーメン/media/recent?access_token=1317256297.4391fe2.f80770052f314ee790ef15658d0a2c3e&count=100";
+
+        showPicture *secondViewController = segue.destinationViewController;
+        secondViewController.arguments = arguments;
+    }else if ([segue.identifier isEqualToString:@"uzushioSegue"]){
+        arguments = @"https://api.instagram.com/v1/tags/渦潮/media/recent?access_token=1317256297.4391fe2.f80770052f314ee790ef15658d0a2c3e&count=100";
+        showPicture *secondViewController = segue.destinationViewController;
+        secondViewController.arguments = arguments;
+    }
 }
 @end

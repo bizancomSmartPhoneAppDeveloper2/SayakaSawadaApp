@@ -35,8 +35,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="meisanButtons:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7UU-ts-bAY"/>
-                                    <segue destination="a1b-lz-lQC" kind="modal" id="rJf-Fa-x2M"/>
+                                    <segue destination="a1b-lz-lQC" kind="modal" identifier="ramenSegue" id="Cks-hb-TW4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdA-FW-z6I">
@@ -51,8 +50,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="meisanButtons:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SgM-Dt-VrJ"/>
-                                    <segue destination="a1b-lz-lQC" kind="modal" id="NcW-FE-Fiw"/>
+                                    <segue destination="a1b-lz-lQC" kind="modal" identifier="uzushioSegue" id="kHG-Cj-TTO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5y-c1-Bb6">
@@ -170,6 +168,6 @@
         <image name="tsurugi.gif" width="306" height="224"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rJf-Fa-x2M"/>
+        <segue reference="kHG-Cj-TTO"/>
     </inferredMetricsTieBreakers>
 </document>
