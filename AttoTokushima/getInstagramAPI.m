@@ -23,7 +23,7 @@
 -(void)timer{
     
     timer = [NSTimer
-             scheduledTimerWithTimeInterval:0.5
+             scheduledTimerWithTimeInterval:2
              target: self
              selector:@selector(getAPI)
              userInfo:nil
@@ -77,6 +77,8 @@
     NSLog(@"タイマーストップ");
 }
 
-
+-(void)showLabel{
+    
+}
 
 @end

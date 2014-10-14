@@ -15,6 +15,7 @@
     NSString *arguments;
 }
 @property (weak, nonatomic) IBOutlet UIImageView *imageview;
+@property (weak, nonatomic) IBOutlet UILabel *jouhouLabel;
 @property UIImage *image;
 @property(nonatomic,retain) NSURL *imageUrlcatch; // 受け取りプロパティ
 @property (nonatomic) NSString *arguments;

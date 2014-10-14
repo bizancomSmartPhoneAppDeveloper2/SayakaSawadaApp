@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0728EC2519ECBE5A00F666FD /* jouhou.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0728EC2419ECBE5A00F666FD /* jouhou.plist */; };
 		075DE2A319E5763F0035B78B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 075DE2A219E5763F0035B78B /* main.m */; };
 		075DE2A619E5763F0035B78B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 075DE2A519E5763F0035B78B /* AppDelegate.m */; };
 		075DE2A919E5763F0035B78B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 075DE2A819E5763F0035B78B /* ViewController.m */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0728EC2419ECBE5A00F666FD /* jouhou.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = jouhou.plist; sourceTree = "<group>"; };
 		075DE29D19E5763F0035B78B /* AttoTokushima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AttoTokushima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		075DE2A119E5763F0035B78B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		075DE2A219E5763F0035B78B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		075DE29419E5763F0035B78B = {
 			isa = PBXGroup;
 			children = (
+				0728EC2419ECBE5A00F666FD /* jouhou.plist */,
 				075DE29F19E5763F0035B78B /* AttoTokushima */,
 				075DE2B919E5763F0035B78B /* AttoTokushimaTests */,
 				075DE29E19E5763F0035B78B /* Products */,
@@ -251,6 +254,7 @@
 				075DE2AE19E5763F0035B78B /* Images.xcassets in Resources */,
 				075DE2CD19E5876E0035B78B /* 9720eadaf8fb407201a58eb819df4509.png in Resources */,
 				075DE2D319E610C80035B78B /* 224_0012_L.png in Resources */,
+				0728EC2519ECBE5A00F666FD /* jouhou.plist in Resources */,
 				075DE2DB19E614700035B78B /* narutokintoki.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

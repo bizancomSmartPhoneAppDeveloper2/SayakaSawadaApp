@@ -15,6 +15,7 @@
 @implementation showPicture{
         getInstagramAPI *ramenAPI;
         getInstagramAPI *awaodoriAPI;
+        NSInteger jouhouNumber;
 }
 @synthesize arguments = arguments;
 
@@ -65,6 +66,16 @@
     //imageviewの画像をimageに設定
     self.imageview.image = appDelegate.imagesend;
     
+    //pilistから情報を呼び出す
+    NSBundle* bundle = [NSBundle mainBundle];
+    //読み込むファイルパスを指定
+    NSString* path = [bundle pathForResource:@"jouhou" ofType:@"plist"];
+    NSArray* dic = [NSArray arrayWithContentsOfFile:path];
+    NSLog(@"arrayの中身は%ld",dic.count);
+    
+    self.jouhouLabel.numberOfLines = 10;
+    self.jouhouLabel.text = [dic objectAtIndex:jouhouNumber];
+    jouhouNumber++;
 }
 
 - (IBAction)backbutton:(UIButton *)sender {
