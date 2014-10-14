@@ -64,19 +64,19 @@
 }
 
 -(void)showJouhouLabel{
-    
-    
     //pilistから情報を呼び出す
-    NSBundle* bundle = [NSBundle mainBundle];
+    NSBundle *bundle = [NSBundle mainBundle];
     //読み込むファイルパスを指定
-    NSString* path = [bundle pathForResource:arguments_jouhou ofType:@"plist"];
-    NSArray* dic = [NSArray arrayWithContentsOfFile:path];
-    NSLog(@"arrayの中身は%ld",dic.count);
+    NSString *path = [bundle pathForResource:arguments_jouhou ofType:@"plist"];
+    NSArray *array = [NSArray arrayWithContentsOfFile:path];
+    NSLog(@"arrayの中身は%ld",array.count);
     
     self.jouhouLabel.numberOfLines = 10;
-    self.jouhouLabel.text = [dic objectAtIndex:jouhouNumber];
-    jouhouNumber++;
-    
-    
+    self.jouhouLabel.text = [array objectAtIndex:jouhouNumber];
+    //if (jouhouNumber < array.count) {
+       jouhouNumber++;
+    //}else{
+        //jouhouNumber = 0;
+    //}
 }
 @end

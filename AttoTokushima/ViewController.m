@@ -33,6 +33,8 @@
     self.tsurugisanImage.hidden = NO;
     self.topLabel.hidden = NO;
     self.topLabel_1.hidden = NO;
+    self.apuriTopButton.hidden = YES;
+    
     
     
 }
