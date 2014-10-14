@@ -71,12 +71,14 @@
     NSArray *array = [NSArray arrayWithContentsOfFile:path];
     NSLog(@"arrayの中身は%ld",array.count);
     
+    if (jouhouNumber < array.count-1) {
+        jouhouNumber++;
+    }else{
+        jouhouNumber = 0;
+    }
+
     self.jouhouLabel.numberOfLines = 10;
     self.jouhouLabel.text = [array objectAtIndex:jouhouNumber];
-    //if (jouhouNumber < array.count) {
-       jouhouNumber++;
-    //}else{
-        //jouhouNumber = 0;
-    //}
-}
+    
+    }
 @end

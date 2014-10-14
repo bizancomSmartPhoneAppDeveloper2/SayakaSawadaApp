@@ -58,17 +58,20 @@
     [self.delegate didGetAPI];
     
     NSLog(@"%ld",pictureCount);
-    pictureCount++;
+    NSLog(@"写真の枚数は%ld",dataArray.count);
+    
+    if (pictureCount < dataArray.count-1) {
+        pictureCount++;
+    }else{
+        pictureCount = 0;
+    }
+    
     
 }
 
 -(void)timerStop{
     [timer invalidate];
     NSLog(@"タイマーストップ");
-}
-
--(void)showLabel{
-    
 }
 
 @end
