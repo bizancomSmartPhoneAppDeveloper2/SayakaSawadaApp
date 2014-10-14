@@ -13,6 +13,7 @@
 @interface ViewController : UIViewController{
     //次の画面へ渡す引数
     NSString *arguments;
+    NSString *arguments_jouhou;
 }
 - (IBAction)keijibanbutton:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
@@ -28,7 +29,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *kejibanLabel;
 - (IBAction)closeWebview:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UIButton *apuriTopButton;
-@property (nonatomic) NSString *arguments;
+//@property (nonatomic) NSString *arguments;
 
 @end
 

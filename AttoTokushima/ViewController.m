@@ -86,38 +86,34 @@
     if ([segue.identifier isEqualToString:@"ramenSegue"]) {
         //ここでパラメータを渡す
         arguments = @"https://api.instagram.com/v1/tags/徳島ラーメン/media/recent?access_token=1317256297.4391fe2.f80770052f314ee790ef15658d0a2c3e&count=100";
+        arguments_jouhou = @"jouhou";
 
-        showPicture *secondViewController = segue.destinationViewController;
-        secondViewController.arguments = arguments;
+        
+                
     }else if ([segue.identifier isEqualToString:@"uzushioSegue"]){
         arguments = @"https://api.instagram.com/v1/tags/渦潮/media/recent?access_token=1317256297.4391fe2.f80770052f314ee790ef15658d0a2c3e&count=100";
-        showPicture *secondViewController = segue.destinationViewController;
-        secondViewController.arguments = arguments;
+        arguments_jouhou = @"jouhouUzushio";
+
     }else if ([segue.identifier isEqualToString:@"tsurugisanSegue"]){
         arguments = @"https://api.instagram.com/v1/tags/剣山/media/recent?access_token=1317256297.4391fe2.f80770052f314ee790ef15658d0a2c3e&count=100";
-        showPicture *secondViewController = segue.destinationViewController;
-        secondViewController.arguments = arguments;
+        
     }else if ([segue.identifier isEqualToString:@"awaodoriSegue"]){
         arguments = @"https://api.instagram.com/v1/tags/阿波踊り/media/recent?access_token=1317256297.4391fe2.f80770052f314ee790ef15658d0a2c3e&count=100";
-        showPicture *secondViewController = segue.destinationViewController;
-        secondViewController.arguments = arguments;
+        
     }else if ([segue.identifier isEqualToString:@"kazurabashiSegue"]){
         arguments = @"https://api.instagram.com/v1/tags/かずら橋/media/recent?access_token=1317256297.4391fe2.f80770052f314ee790ef15658d0a2c3e&count=100";
-        showPicture *secondViewController = segue.destinationViewController;
-        secondViewController.arguments = arguments;
+        
     }else if ([segue.identifier isEqualToString:@"sudathiSegue"]){
         arguments = @"https://api.instagram.com/v1/tags/すだち/media/recent?access_token=1317256297.4391fe2.f80770052f314ee790ef15658d0a2c3e&count=100";
-        showPicture *secondViewController = segue.destinationViewController;
-        secondViewController.arguments = arguments;
+        
     }else if ([segue.identifier isEqualToString:@"narutokintokiSegue"]){
         arguments = @"https://api.instagram.com/v1/tags/鳴門金時/media/recent?access_token=1317256297.4391fe2.f80770052f314ee790ef15658d0a2c3e&count=100";
-        showPicture *secondViewController = segue.destinationViewController;
-        secondViewController.arguments = arguments;
+        
     }
-
-
-
-
+    
+    showPicture *secondViewController = segue.destinationViewController;
+    secondViewController.arguments = arguments;
+    secondViewController.arguments_jouhou = arguments_jouhou;
 
 }
 @end

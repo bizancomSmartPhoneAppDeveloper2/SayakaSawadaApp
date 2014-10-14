@@ -19,6 +19,7 @@
 @property UIImage *image;
 @property(nonatomic,retain) NSURL *imageUrlcatch; // 受け取りプロパティ
 @property (nonatomic) NSString *arguments;
+@property (nonatomic) NSString *arguments_jouhou;
 
 @end
 

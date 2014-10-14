@@ -13,33 +13,24 @@
 @end
 
 @implementation showPicture{
-        getInstagramAPI *ramenAPI;
-        getInstagramAPI *awaodoriAPI;
+        getInstagramAPI *API;
+        //getInstagramAPI *awaodoriAPI;
         NSInteger jouhouNumber;
 }
 @synthesize arguments = arguments;
-
+@synthesize arguments_jouhou = arguments_jouhou;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     NSLog(@"アギュメンは%@",arguments);
-    ramenAPI = [[getInstagramAPI alloc]init];//さっき準備したmyCarをインスタンス化
-    ramenAPI.delegate = self;
-    awaodoriAPI = [[getInstagramAPI alloc]init];
-    awaodoriAPI.delegate = self;
-    
-    
+    NSLog(@"情報アギュメンは%@",arguments_jouhou);
+    API = [[getInstagramAPI alloc]init];
+    API.delegate = self;
     self.imageview.contentMode = UIViewContentModeScaleAspectFit;
 
-    ramenAPI.sendString = arguments;
-        //ramenAPI.sendString = @"https://api.instagram.com/v1/tags/徳島ラーメン/media/recent?access_token=1317256297.4391fe2.f80770052f314ee790ef15658d0a2c3e&count=100";
-    
-        [ramenAPI timer];
-   
-        //awaodoriAPI.sendString = @"https://api.instagram.com/v1/tags/阿波おどり/media/recent?access_token=1317256297.4391fe2.f80770052f314ee790ef15658d0a2c3e&count=100";
-        //[awaodoriAPI timer];
-    
+    API.sendString = arguments;
+    [API timer];
 
 }
 
@@ -59,29 +50,33 @@
 */
 
 
-
+//getしたAPIの画像を表示する、ラベルにも関連した情報を表示する
 -(void)didGetAPI{
-    
+    //デリゲートに保存したimageを取得する
     AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate]; // デリゲート呼び出し
     //imageviewの画像をimageに設定
     self.imageview.image = appDelegate.imagesend;
+    [self showJouhouLabel];
+}
+
+- (IBAction)backbutton:(UIButton *)sender {
+    [API timerStop];
+}
+
+-(void)showJouhouLabel{
+    
     
     //pilistから情報を呼び出す
     NSBundle* bundle = [NSBundle mainBundle];
     //読み込むファイルパスを指定
-    NSString* path = [bundle pathForResource:@"jouhou" ofType:@"plist"];
+    NSString* path = [bundle pathForResource:arguments_jouhou ofType:@"plist"];
     NSArray* dic = [NSArray arrayWithContentsOfFile:path];
     NSLog(@"arrayの中身は%ld",dic.count);
     
     self.jouhouLabel.numberOfLines = 10;
     self.jouhouLabel.text = [dic objectAtIndex:jouhouNumber];
     jouhouNumber++;
-}
-
-- (IBAction)backbutton:(UIButton *)sender {
-    [ramenAPI timerStop];
+    
     
 }
-
-
 @end

@@ -9,19 +9,14 @@
 #import "getInstagramAPI.h"
 
 @implementation getInstagramAPI{
-    //apiのURLを入れる
     NSURL *url;
-    //画像のURLを文字列として入れる
     NSString *imgurl;
     NSInteger pictureCount;
     NSTimer *timer;
     NSString *str;
 }
 
-
-
 -(void)timer{
-    
     timer = [NSTimer
              scheduledTimerWithTimeInterval:2
              target: self
@@ -39,12 +34,6 @@
     //NSURLを作成
     url = [NSURL URLWithString:str];
     
-    //if(buttonCount < 20){
-    //    nil;
-    //}else if (buttonCount == 20){
-    //    buttonCount = 0;
-    //}
-    
     //apiのURL先にあるデータを入れる
     NSData *data = [NSData dataWithContentsOfURL:url];
     NSError *err = nil;
@@ -60,11 +49,12 @@
     //画像のURLをデータとしてまず入れる
     _imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:imgurl]];
     
-    //imgdata画像を生成しimageに格納
+    //画像を生成しimageに入れる
     _image = [[UIImage alloc] initWithData:_imageData];
-    
+    //imagedataを他クラスから参照するので、appに保存する
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate]; // デリゲート呼び出し
     appDelegate.imagesend = _image; // デリゲートプロパティに値代入
+    //APIをゲットした事をデリゲート先に伝える
     [self.delegate didGetAPI];
     
     NSLog(@"%ld",pictureCount);
