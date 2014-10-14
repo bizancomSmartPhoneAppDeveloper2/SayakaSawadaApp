@@ -130,6 +130,8 @@
                         <outlet property="sudathiImage" destination="BvL-RU-3Dt" id="OuS-i3-Eec"/>
                         <outlet property="tokushimaView" destination="IQS-L0-FjW" id="aNg-kq-pty"/>
                         <outlet property="tokushimalabel" destination="Qf0-3D-RLf" id="d9T-UO-z7p"/>
+                        <outlet property="topLabel" destination="Qf0-3D-RLf" id="5c5-zT-c2B"/>
+                        <outlet property="topLabel_1" destination="557-Io-mgU" id="L63-VF-z6j"/>
                         <outlet property="tsurugisanImage" destination="gmj-1Q-XVL" id="1hs-jj-6VG"/>
                         <outlet property="uzushioImage" destination="ze9-Dv-qCb" id="Yz5-Gr-igg"/>
                         <outlet property="webView" destination="qcz-nB-KB8" id="29h-KA-Rvr"/>

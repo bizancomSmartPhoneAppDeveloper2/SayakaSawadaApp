@@ -31,6 +31,8 @@
     self.tokushimalabel.hidden = NO;
     self.tokushimaView.hidden = NO;
     self.tsurugisanImage.hidden = NO;
+    self.topLabel.hidden = NO;
+    self.topLabel_1.hidden = NO;
     
     
 }
@@ -53,6 +55,9 @@
     self.tokushimalabel.hidden = YES;
     self.tsurugisanImage.hidden = YES;
     self.kejibanLabel.hidden = YES;
+    self.topLabel.hidden = YES;
+    self.topLabel_1.hidden = YES;
+
 
     keijibanString = @"http://sayaka-sawada.main.jp/keijiban/";
     NSURL *keijbanUrl = [NSURL URLWithString:keijibanString];
@@ -78,6 +83,9 @@
     self.tsurugisanImage.hidden = NO;
     self.kejibanLabel.hidden = NO;
     self.apuriTopButton.hidden = YES;
+    self.topLabel.hidden = NO;
+    self.topLabel_1.hidden = NO;
+
 }
 
 //画面遷移時に呼ばれるメソッド
