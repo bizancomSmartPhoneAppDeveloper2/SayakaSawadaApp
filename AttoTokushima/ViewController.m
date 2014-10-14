@@ -96,10 +96,13 @@
 
     }else if ([segue.identifier isEqualToString:@"tsurugisanSegue"]){
         arguments = @"https://api.instagram.com/v1/tags/剣山/media/recent?access_token=1317256297.4391fe2.f80770052f314ee790ef15658d0a2c3e&count=100";
+        arguments_jouhou = @"tsurugisan";
+
         
     }else if ([segue.identifier isEqualToString:@"awaodoriSegue"]){
         arguments = @"https://api.instagram.com/v1/tags/阿波踊り/media/recent?access_token=1317256297.4391fe2.f80770052f314ee790ef15658d0a2c3e&count=100";
-        
+        arguments_jouhou = @"awaodori";
+
     }else if ([segue.identifier isEqualToString:@"kazurabashiSegue"]){
         arguments = @"https://api.instagram.com/v1/tags/かずら橋/media/recent?access_token=1317256297.4391fe2.f80770052f314ee790ef15658d0a2c3e&count=100";
         
