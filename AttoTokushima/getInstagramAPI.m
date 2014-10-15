@@ -18,11 +18,12 @@
 
 -(void)timer{
     timer = [NSTimer
-             scheduledTimerWithTimeInterval:1
+             scheduledTimerWithTimeInterval:2
              target: self
              selector:@selector(getAPI)
              userInfo:nil
              repeats:YES];
+    _MoveTimer = YES;
 }
 
 -(void)getAPI{
@@ -72,6 +73,7 @@
 -(void)timerStop{
     [timer invalidate];
     NSLog(@"タイマーストップ");
+    _MoveTimer = NO;
 }
 
 @end

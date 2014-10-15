@@ -20,6 +20,7 @@
 @property UIImage *image;
 @property NSString *imageurl;
 @property NSString *sendString;
+@property BOOL MoveTimer;
 -(void)timer;
 -(void)getAPI;
 -(void)timerStop;

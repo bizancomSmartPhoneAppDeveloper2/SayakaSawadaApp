@@ -81,6 +81,16 @@
 
     self.jouhouLabel.numberOfLines = 10;
     self.jouhouLabel.text = [array objectAtIndex:jouhouNumber];
-    
     }
+- (IBAction)stopRestartButton:(UIButton *)sender {
+    if (API.MoveTimer == YES) {
+        [API timerStop];
+        API.MoveTimer = NO;
+        NSLog(@"タイマー一時停止");
+    }else if (API.MoveTimer == NO){
+        [API timer];
+        API.MoveTimer = YES;
+    NSLog(@"タイマー再会");
+    }
+}
 @end

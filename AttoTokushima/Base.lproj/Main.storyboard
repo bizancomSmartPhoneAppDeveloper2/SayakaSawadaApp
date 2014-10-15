@@ -83,15 +83,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvX-Kj-cia">
-                                <rect key="frame" x="98" y="447" width="135" height="30"/>
-                                <state key="normal" title="徳島を語る掲示板へ">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="keijibanbutton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3nd-a8-C07"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmj-1Q-XVL">
                                 <rect key="frame" x="202" y="182" width="67" height="39"/>
                                 <state key="normal" backgroundImage="tsurugi.gif">
@@ -114,6 +105,16 @@
                                 </state>
                                 <connections>
                                     <action selector="closeWebview:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Jdd-eW-lGA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvX-Kj-cia">
+                                <rect key="frame" x="31" y="436" width="259" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="徳島を語る掲示板へ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="keijibanbutton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3nd-a8-C07"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -178,6 +179,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHz-eF-VGS">
+                                <rect key="frame" x="112" y="324" width="96" height="30"/>
+                                <state key="normal" title="一時停止/再会">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopRestartButton:" destination="a1b-lz-lQC" eventType="touchUpInside" id="btK-Uu-XgO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

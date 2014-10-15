@@ -21,6 +21,7 @@
 @property (nonatomic) NSString *arguments;
 @property (nonatomic) NSString *arguments_jouhou;
 @property (weak, nonatomic) IBOutlet UILabel *waitingLabel;
+- (IBAction)stopRestartButton:(UIButton *)sender;
 
 @end
 
