@@ -20,6 +20,7 @@
 @property(nonatomic,retain) NSURL *imageUrlcatch; // 受け取りプロパティ
 @property (nonatomic) NSString *arguments;
 @property (nonatomic) NSString *arguments_jouhou;
+@property (weak, nonatomic) IBOutlet UILabel *waitingLabel;
 
 @end
 

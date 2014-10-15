@@ -172,6 +172,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fEz-XJ-tfS">
                                 <rect key="frame" x="22" y="14" width="276" height="315"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="スライドショーと豆知識を開始します" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9p7-kM-Cbr">
+                                <rect key="frame" x="16" y="174" width="289" height="61"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -179,6 +185,7 @@
                     <connections>
                         <outlet property="imageview" destination="fEz-XJ-tfS" id="kUC-Qx-3Yh"/>
                         <outlet property="jouhouLabel" destination="sOA-7X-ylW" id="68n-Ym-fUf"/>
+                        <outlet property="waitingLabel" destination="9p7-kM-Cbr" id="ykL-X8-LAu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hwf-Bo-nCE" userLabel="First Responder" sceneMemberID="firstResponder"/>

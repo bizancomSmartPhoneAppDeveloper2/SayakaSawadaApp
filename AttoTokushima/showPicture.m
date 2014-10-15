@@ -31,6 +31,7 @@
 
     API.sendString = arguments;
     [API timer];
+    self.waitingLabel.hidden = NO;
 
 }
 
@@ -64,6 +65,7 @@
 }
 
 -(void)showJouhouLabel{
+    self.waitingLabel.hidden = YES;
     //pilistから情報を呼び出す
     NSBundle *bundle = [NSBundle mainBundle];
     //読み込むファイルパスを指定
