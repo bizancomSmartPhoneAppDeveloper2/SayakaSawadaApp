@@ -125,7 +125,12 @@
         arguments = @"https://api.instagram.com/v1/tags/鳴門金時/media/recent?access_token=1317256297.4391fe2.f80770052f314ee790ef15658d0a2c3e&count=100";
         arguments_jouhou = @"narutokintoki";
 
+    }else if ([segue.identifier isEqualToString:@"hatenaSegue"]){
+        arguments = @"https://api.instagram.com/v1/tags/徳島/media/recent?access_token=1317256297.4391fe2.f80770052f314ee790ef15658d0a2c3e&count=100";
+        arguments_jouhou = @"hatena";
+        
     }
+
     
     showPicture *secondViewController = segue.destinationViewController;
     secondViewController.arguments = arguments;

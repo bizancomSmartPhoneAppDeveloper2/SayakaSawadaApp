@@ -32,6 +32,7 @@
 		075DE2DB19E614700035B78B /* narutokintoki.png in Resources */ = {isa = PBXBuildFile; fileRef = 075DE2DA19E614700035B78B /* narutokintoki.png */; };
 		0778AFDD19E64DC60062A57C /* tsurugi.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0778AFDC19E64DC60062A57C /* tsurugi.gif */; };
 		07862A1719EB8F5200450B41 /* getInstagramAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 07862A1619EB8F5200450B41 /* getInstagramAPI.m */; };
+		07DD4EFD19EF4866008FBA47 /* hatena.png in Resources */ = {isa = PBXBuildFile; fileRef = 07DD4EFC19EF4866008FBA47 /* hatena.png */; };
 		07EB92B919EC09B30066FD46 /* showPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EB92B819EC09B30066FD46 /* showPicture.m */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,7 @@
 		0778AFDC19E64DC60062A57C /* tsurugi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tsurugi.gif; sourceTree = "<group>"; };
 		07862A1519EB8F5200450B41 /* getInstagramAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getInstagramAPI.h; sourceTree = "<group>"; };
 		07862A1619EB8F5200450B41 /* getInstagramAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = getInstagramAPI.m; sourceTree = "<group>"; };
+		07DD4EFC19EF4866008FBA47 /* hatena.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hatena.png; sourceTree = "<group>"; };
 		07EB92B719EC09B30066FD46 /* showPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = showPicture.h; sourceTree = "<group>"; };
 		07EB92B819EC09B30066FD46 /* showPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = showPicture.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +142,7 @@
 		075DE2A019E5763F0035B78B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				07DD4EFC19EF4866008FBA47 /* hatena.png */,
 				0728EC2419ECBE5A00F666FD /* jouhou.plist */,
 				0728EC2619ECCA0300F666FD /* jouhouUzushio.plist */,
 				0728EC2A19ECE53E00F666FD /* tsurugisan.plist */,
@@ -263,6 +266,7 @@
 				075DE2D119E58AF10035B78B /* awa.gif in Resources */,
 				075DE2AC19E5763F0035B78B /* Main.storyboard in Resources */,
 				0728EC2F19ECEDCE00F666FD /* sudathi.plist in Resources */,
+				07DD4EFD19EF4866008FBA47 /* hatena.png in Resources */,
 				0778AFDD19E64DC60062A57C /* tsurugi.gif in Resources */,
 				0728EC2719ECCA0300F666FD /* jouhouUzushio.plist in Resources */,
 				075DE2CB19E5832D0035B78B /* ramen.png in Resources */,

@@ -117,6 +117,15 @@
                                     <action selector="keijibanbutton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3nd-a8-C07"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnL-kp-5G5">
+                                <rect key="frame" x="133" y="244" width="54" height="80"/>
+                                <state key="normal" backgroundImage="hatena.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="a1b-lz-lQC" kind="modal" identifier="hatenaSegue" id="qy2-0H-x0R"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -180,7 +189,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHz-eF-VGS">
-                                <rect key="frame" x="112" y="324" width="96" height="30"/>
+                                <rect key="frame" x="112" y="316" width="96" height="30"/>
                                 <state key="normal" title="一時停止/再会">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -195,6 +204,7 @@
                     <connections>
                         <outlet property="imageview" destination="fEz-XJ-tfS" id="kUC-Qx-3Yh"/>
                         <outlet property="jouhouLabel" destination="sOA-7X-ylW" id="68n-Ym-fUf"/>
+                        <outlet property="stopRestartButtonLabel" destination="eHz-eF-VGS" id="4uL-Ye-RHh"/>
                         <outlet property="waitingLabel" destination="9p7-kM-Cbr" id="ykL-X8-LAu"/>
                     </connections>
                 </viewController>
@@ -209,12 +219,13 @@
         <image name="224_0012_L.png" width="356" height="500"/>
         <image name="9720eadaf8fb407201a58eb819df4509.png" width="631" height="427"/>
         <image name="awa.gif" width="283" height="254"/>
+        <image name="hatena.png" width="253" height="388"/>
         <image name="narutokintoki.png" width="454" height="426"/>
         <image name="ramen.png" width="366" height="236"/>
         <image name="tokushima.png" width="389" height="289"/>
         <image name="tsurugi.gif" width="306" height="224"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ydv-Pt-fPg"/>
+        <segue reference="qy2-0H-x0R"/>
     </inferredMetricsTieBreakers>
 </document>

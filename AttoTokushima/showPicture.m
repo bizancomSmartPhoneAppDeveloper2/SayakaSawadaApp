@@ -32,7 +32,7 @@
     API.sendString = arguments;
     [API timer];
     self.waitingLabel.hidden = NO;
-
+    self.stopRestartButtonLabel.hidden = YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -66,6 +66,8 @@
 
 -(void)showJouhouLabel{
     self.waitingLabel.hidden = YES;
+    self.stopRestartButtonLabel.hidden = NO;
+
     //pilistから情報を呼び出す
     NSBundle *bundle = [NSBundle mainBundle];
     //読み込むファイルパスを指定
