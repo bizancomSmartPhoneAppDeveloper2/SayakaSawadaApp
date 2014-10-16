@@ -75,15 +75,16 @@
     NSArray *array = [NSArray arrayWithContentsOfFile:path];
     NSLog(@"arrayの中身は%ld",array.count);
     
+    self.jouhouLabel.numberOfLines = 10;
+    self.jouhouLabel.text = [array objectAtIndex:jouhouNumber];
+
     if (jouhouNumber < array.count-1) {
         jouhouNumber++;
     }else{
         jouhouNumber = 0;
     }
 
-    self.jouhouLabel.numberOfLines = 10;
-    self.jouhouLabel.text = [array objectAtIndex:jouhouNumber];
-    }
+        }
 - (IBAction)stopRestartButton:(UIButton *)sender {
     if (API.MoveTimer == YES) {
         [API timerStop];
