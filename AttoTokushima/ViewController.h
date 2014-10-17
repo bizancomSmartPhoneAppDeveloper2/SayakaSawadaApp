@@ -28,6 +28,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *tsurugisanImage;
 @property (weak, nonatomic) IBOutlet UIButton *kejibanLabel;
 @property (weak, nonatomic) IBOutlet UILabel *topLabel;
+@property (weak, nonatomic) IBOutlet UIButton *hatenaImage;
 @property (weak, nonatomic) IBOutlet UILabel *topLabel_1;
 - (IBAction)closeWebview:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UIButton *apuriTopButton;

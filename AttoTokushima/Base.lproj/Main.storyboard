@@ -133,6 +133,7 @@
                     <connections>
                         <outlet property="apuriTopButton" destination="yCa-U0-DNy" id="aJs-IG-gtF"/>
                         <outlet property="awaodoriImage" destination="vdA-FW-z6I" id="4Ok-i6-EtH"/>
+                        <outlet property="hatenaImage" destination="hnL-kp-5G5" id="5lG-Df-jIf"/>
                         <outlet property="kazurabashiImage" destination="Pux-dP-wn0" id="QZd-hy-emc"/>
                         <outlet property="kejibanLabel" destination="ZvX-Kj-cia" id="5EX-Jq-UfR"/>
                         <outlet property="narutokintokiImage" destination="r5y-c1-Bb6" id="98z-qO-qbP"/>

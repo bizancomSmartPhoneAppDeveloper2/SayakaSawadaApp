@@ -18,7 +18,7 @@
 
 -(void)timer{
     timer = [NSTimer
-             scheduledTimerWithTimeInterval:3
+             scheduledTimerWithTimeInterval:0.1
              target: self
              selector:@selector(getAPI)
              userInfo:nil
